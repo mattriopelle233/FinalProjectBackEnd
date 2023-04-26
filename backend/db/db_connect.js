@@ -9,7 +9,6 @@ async function db_connect() {
 
 	// Connection using mongoose
 	// console.log(process.env)
-	console.log(process.env.DB_CONNECTION_URI)
 	mongoose
 		.connect(process.env.DB_CONNECTION_URI)
 		.then((res) => {

@@ -7,6 +7,7 @@ import loginUser from './endpoints/login.js';
 import registerUser from './endpoints/register.js';
 import deleteQRCode from './endpoints/deleteQRCode.js';
 import getQRCodesByUser from './endpoints/getQRCodesByUser.js';
+import updateQRCodeName from './endpoints/updateQRCodeName.js';
 
 const app = express();
 app.use(body_parser.json({ limit: "16mb" }));
@@ -45,5 +46,5 @@ loginUser(app)
 registerUser(app)
 deleteQRCode(app)
 getQRCodesByUser(app)
-
+updateQRCodeName(app)
 
