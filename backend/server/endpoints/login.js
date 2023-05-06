@@ -18,8 +18,8 @@ function loginUser(app) {
             }
             else{
                 if(result.password == pass){
-                    response.status(201).send({
-                        message: "Login verification successful",
+                    response.send({
+                        userId: result._id
                     });
                 }
                 else{
